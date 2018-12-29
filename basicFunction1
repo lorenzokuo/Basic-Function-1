@@ -1,0 +1,63 @@
+// 8 out of 15 correct
+//1 v
+output: 35
+
+//2 v
+output: 8
+
+//3 v
+output: 6
+
+//4 v
+output: 3
+output: 9
+
+//5 ???
+T-Diagram: b=10
+output: 10x
+output: 40
+
+//6 ???
+T-Diagram: b=15
+output: 15x stop after return
+output: 4
+
+//7 v
+T-Diagram: b=3 ;c=10
+output: 10,3
+output: 30
+
+//8 v
+T-Diagram: b=3,4 ;i=0,1,2,3,4,5,6,7,8,9,10
+output: 3
+output: 4
+
+//9 x
+T-Diagram: i=0,2,3,5,6,8,9,11,12
+output: 2,5,8,11
+
+//10 ???
+T-Diagram: b=0, ;c=10, ;i=0
+Value: a(b,c)=0,
+output: 0,1,2,3,4,5,6,7,8,9(a(0,10)),0,1,2,3,4,5,6,7,8,9(console.log(a(0,10))),0(return)
+
+//11 x
+T-Diagram: i=0,1,2,3,4,5,6,7,8,9,10 ;j=0,1,2,3,4,5,6,7,8,9,10
+output: empty
+
+//12 x
+T-Diagram: i=0,1,2,3,4,5,6,7,8,9,10 ;j=0,1,2,3,4,5,6,7,8,9,10
+output: empty
+
+//13 v
+T-Diagram: z=10,15
+output:10
+
+//14 v
+T-Diagram: z=10,15
+output: 15
+output: 10
+
+//15 x
+T-Diagram: z=10,15
+output: 15,15
